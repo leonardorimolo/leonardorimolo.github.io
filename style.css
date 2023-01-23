@@ -1,0 +1,308 @@
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-size: 18px;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+#topo-principal{
+    display: flex;
+    justify-content: space-between;
+}
+#Rimolo{
+    font-size: 18px !important;
+    padding-left:10px;
+}
+
+#topo-first-list{
+    font-size: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent !important;
+}
+section .bg-body-tertiary{
+    background: none !important;
+}
+section .btn:hover{
+    background-color: white;
+    border-color: white !important;
+}
+main section{
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+}
+main section .container-sm{
+    max-width: 500px;
+}
+.image{
+    border: 5px solid;
+    border-radius: 5px;
+}
+
+:root {
+    --cor-background: #212529;
+    --cor-reflexo: rgba(255, 255, 255, 0.4);
+    --cores-dancantes: rgb(76, 217, 105), rgb(52, 170, 220), rgb(88, 86, 217),
+        rgb(255, 45, 83);
+}
+.conteudo {
+    margin-top: 60px;
+    padding: 3rem;
+    color: #EFEFEF;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    background: linear-gradient(to right, var(--cores-dancantes));
+    width: 480px;
+    height: 180px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 999;
+    animation: coresDancantes 2s linear infinite;
+}
+
+@keyframes coresDancantes{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.conteudo .caixa,
+        .conteudo span {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .conteudo .caixa {
+            z-index: 1;
+            background-color: var(--cor-background);
+            width: 460px;
+            height: 160px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .conteudo>span {
+            height: 100%;
+            width: 100%;
+            background: inherit;
+            border-radius: 10px;
+        }
+
+        .conteudo>span:nth-child(1) {
+            filter: blur(2px);
+        }
+
+        .conteudo>span:nth-child(2) {
+            filter: blur(5px);
+        }
+
+
+    .about-me-section{
+        display: flex;
+        justify-content: space-around;
+    }
+    .about-me-section article{
+        width:580px;
+    }
+   .skills-conteudo{
+    padding-right: 800px;
+    margin-top: 150px;
+   }
+   .conteudo1 {
+    margin-left: 110px;
+    display: inline-flex;
+    border-bottom: 4px solid #EFEFEF;
+    border-radius: 5px;
+}
+.conteudo1 img {
+    width: 100%;
+    width: 150px;
+    filter: drop-shadow(0px 0px 1px #4b4b50);
+    animation: flutuar 3s linear infinite;
+}
+@keyframes flutuar {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-23px);
+    }
+}
+.conteudo1 img:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.conteudo1 img:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.conteudo1 img:nth-child(4) {
+    animation-delay: .6s;
+}
+
+.conteudo1 img:nth-child(5) {
+    animation-delay: .8s;
+}
+a{
+    text-decoration: none !important;
+}
+.whatsapp{
+    color: green;
+}
+
+.contact{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.contact iframe{
+    border: 8px solid white;
+    border-radius: 8px;
+    filter: opacity(30%);
+}
+.iframe-article{
+    position: absolute;
+    width: 100%;
+}
+.conteudo-contact{
+    position: relative;
+    top: 100px;
+
+}
+
+.conteudo-contact span{
+    position: relative;
+}
+.caixa a{
+    padding-top: 15px;
+    display: block;
+    width: 220px;
+    height:70px;
+    border: 8px solid;
+    border-radius: 10px;
+}
+footer{
+    border-top: 2px solid white;
+    margin-top: 260px;
+}
+footer p {
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+    
+
+
+@media(max-width: 600px) {
+    section .nav{
+        display: none !important;
+    }
+    main section{
+        margin-top: 100px;
+    }
+    .article-image figure{
+        display: none;
+    }
+    .conteudo{
+        max-width: 100%;
+    }
+    .conteudo .caixa{
+        max-width: 95%;
+    }
+    #Rimolo{
+        padding-top: 13px;
+    }
+    .about-me-section{
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-section article{
+        max-width: 100% !important;
+    }
+    
+
+    .about-me-section article p{
+        max-width: 330px;
+    }
+
+    .conteudo1{
+        position: absolute;
+        right: 60px;
+    }
+    .conteudo1 img{
+    position: relative;
+       max-width: 100px;
+    }
+    .caixa{
+        height: 90% !important;
+    }
+    .conteudo{
+        width: 60%;
+        height: 50%;
+        margin-bottom: 80px;
+    }
+   
+}
