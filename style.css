@@ -259,11 +259,12 @@ footer p {
     section .nav{
         display: none !important;
     }
-    main section{
-        margin-top: 100px;
-    }
     .article-image figure{
         display: none;
+    }
+    main section{
+        margin-top: 100px;
+        margin-bottom: 310px;
     }
     .conteudo{
         max-width: 100%;
